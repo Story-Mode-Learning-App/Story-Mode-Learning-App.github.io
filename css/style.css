@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@1,600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  'Montserrat', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  background-attachment: fixed;
+}
+.container {
+  position: relative;
+  max-width: 1000px;
+  margin-top: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+::selection{
+  color: #fff;
+  background: #01579b;
+}
+.wrapper{
+  height: 400px;
+  width: 320px;
+  margin: 10px;
+  position: relative;
+  transform-style: preserve-3d;
+	perspective: 1000px;
+}
+.container .wrapper .card{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  transform: translateY(0deg);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.5);
+  transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+.wrapper:hover > .front-face{
+  transform: rotateY(-180deg);
+}
+.wrapper .card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.wrapper .back-face{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  transform: rotateY(180deg);
+}
+.wrapper:hover > .back-face{
+  transform: rotateY(0deg);
+}
+.wrapper .back-face img{
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #039BE5, #01579b);
+}
+.wrapper .back-face .info{
+  text-align: center;
+}
+.back-face .info .title{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.back-face a{
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(to right, #039BE5, #01579b);
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.back-face a:hover{
+  color: #039BE5;
+  font-weight: bold;
+  border: 1px solid  #01579b;
+  background-image: linear-gradient(to right, #fff, #ffe1fe);
+}
