@@ -18,6 +18,11 @@ body {
   width: 40px;
   margin-right: 10px;
 }
+@media screen and (max-width: 600px) {
+  .navbar-brand img {
+    display: none;
+  } 
+}
 .container {
   position: relative;
   max-width: 1000px;
