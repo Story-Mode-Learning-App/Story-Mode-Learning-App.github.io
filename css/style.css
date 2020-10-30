@@ -13,6 +13,11 @@ body {
   background-color: #fff;
   background-attachment: fixed;
 }
+.navbar-brand img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
 .container {
   position: relative;
   max-width: 1000px;
@@ -93,11 +98,16 @@ body {
   color: #fff;
   border-radius: 40px;
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .back-face a:hover{
   color: #039BE5;
   font-weight: bold;
   border: 1px solid  #01579b;
   background-image: linear-gradient(to right, #fff, #ffe1fe);
+}
+video {
+  height: 405px;
+  width: 320px;
+  padding: 0;
 }

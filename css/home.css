@@ -2,7 +2,16 @@ body {
     margin: 0;
     padding: 0;
     background: #fff;
-    font-family: 'Quicksand',sans-serif;
+}
+.navbar-brand img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+@media screen and (max-width: 600px) {
+	.navbar-brand img {
+		display: none;
+	}	
 }
 .container {
     max-width: 1000px;
@@ -27,6 +36,10 @@ body {
     z-index: 1000;
     transform: perspective(2000px) rotate(-10deg);
     box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5);
+}
+.imgBox img {
+    height: 396px;
+    width: 296px;
 }
 .card .imgBox {
     position: relative;

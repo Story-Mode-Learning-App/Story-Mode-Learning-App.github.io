@@ -11,15 +11,34 @@
     background: radial-gradient(circle, #039BE5, #01579b);
     z-index: 10000;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     color: white;
     flex-direction: column;
 }
-#page-splash h3,
+.icon img {
+    margin-top: 10px;
+}
+@media screen and (max-width: 600px) {
+    .icon img {
+        position: top;
+        height: 150px;
+        width: 150px;
+        margin-top: 40px;
+    }
+    .declearation h5 {
+        position: relative;
+        display: bottom;
+        margin: 10px 0;
+    }
+  }
+#page-splash h3{
+    display: block;
+    text-align: center;
+}
 #page-splash h5 {
     display: block;
-    margin: 30px;
+    margin-bottom: 20px;
     text-align: center;
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@1,600&display=swap');

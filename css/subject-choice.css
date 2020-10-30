@@ -2,6 +2,16 @@
 * {
 	font-family:  'Montserrat', sans-serif;
 }
+.navbar-brand img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+@media screen and (max-width: 600px) {
+	.navbar-brand img {
+		display: none;
+	}	
+}
 .button-div {
 	display: flex;
 	align-items: center;
