@@ -1,6 +1,3 @@
-function alreadyLogin() {
-    window.location="home.html";
-}
 (function () {
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
     var uiConfig = {
@@ -39,7 +36,6 @@ ui.start('#firebaseui-auth-container', uiConfig);
 var uid = null;
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
-    // User is signed in.
     uid = user.uid;
     window.location.replace("home.html");
   }

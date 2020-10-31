@@ -18,18 +18,30 @@
 }
 .icon img {
     margin-top: 10px;
+    margin-bottom: 40px;
+}
+@media screen and (max-height: 640px) {
+    .icon img {
+        display: none;
+    }
+}
+@media screen and (max-width: 280px) {
+    .icon img {
+        display: none;
+    }
 }
 @media screen and (max-width: 600px) {
     .icon img {
-        position: top;
         height: 150px;
         width: 150px;
-        margin-top: 40px;
+        margin: 10px;
+    }
+    form {
+        margin-bottom: 20px;
     }
     .declearation h5 {
         position: relative;
-        display: bottom;
-        margin: 10px 0;
+        margin: 50px 0;
     }
   }
 #page-splash h3{
@@ -38,7 +50,7 @@
 }
 #page-splash h5 {
     display: block;
-    margin-bottom: 20px;
+    margin: 50px 0;
     text-align: center;
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@1,600&display=swap');
