@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/subject-choice.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/iframe.css">
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
 </head>
@@ -43,6 +45,11 @@
             <div class="details">
                 <h2 >Chapter - 1</h2>
                 <p>প্রাণীর বিভিন্নতা ও শ্রেণিবিন্যাস</p>
+                <ul>
+                    <li>List 1</li>
+                    <li>List 2</li>
+                    <li>List 3</li>
+                </ul>
                 <a href="topics/chapter-1.html">click me</a>
             </div>
         </div>
@@ -67,9 +74,9 @@
             </div>
         </div>
         <div class="container" id="2nd">
-            <div class="button-div">
-            <h4 style="text-align: center;">Download Now (It's Free)</h4>
-            <a class="buttonAd" href="https://cutt.ly/kf2GtNy"><span>Digital Interactive Suchipotro</span></a>
+            <div class="phy01-button">
+            <h4 style="text-align: center;">Download Now (70% Off)</h4>
+            <a type="button" class="myBtn"><span>Physics 1st Paper</span></a>          
         </div>
         </div>
         <div class="card">
@@ -103,9 +110,9 @@
             </div>
         </div>
         <div class="container" id="3rd">
-            <div class="button-div">
-            <h4 style="text-align: center;">Download Now (It's Free)</h4>
-            <a class="buttonAd" href="https://cutt.ly/kf2GtNy"><span>Digital Interactive Suchipotro</span></a>
+            <div class="chem01-button">
+            <h4 style="text-align: center;">Download Now (70% Off)</h4>
+            <a type="button" class="myBtn"><span>Chemistry 1st Paper</span></a>
         </div>
         </div>
         <div class="card">
@@ -139,9 +146,9 @@
             </div>
         </div>
         <div class="container" id="4th">
-            <div class="button-div">
-            <h4 style="text-align: center;">Download Now (It's Free)</h4>
-            <a class="buttonAd" href="https://cutt.ly/kf2GtNy"><span>Digital Interactive Suchipotro</span></a>
+            <div class="chem02-button">
+            <h4 style="text-align: center;">Download Now (70% Off)</h4>
+            <a type="button" class="myBtn"><span>Chemistry 2nd Paper</span></a>
         </div>
         </div>
         <div class="card">
@@ -176,11 +183,50 @@
         </div>
     </div>
     <div class="container">
-        <div class="button-div">
+        <div class="shuchipotro-button">
         <h4 style="text-align: center;">Download Now (It's Free)</h4>
-        <a class="buttonAd" href="https://cutt.ly/kf2GtNy"><span>Digital Interactive Suchipotro</span></a>
+        <a type="button" class="myBtn"><span>Digital Interactive Suchipotro</span></a>
     </div>
     </div>
+    <!-- Adevertisements -->
+    <!-- Physics 1st Paper -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <iframe src="https://cutt.ly/bfalebg" muted width="100%" frameborder="0"></iframe>
+  </div>
+</div>
+<!-- Physics 1st Paper End -->
+    <!-- Chemistry 1st Paper -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <iframe src="https://cutt.ly/Ofalt5F" muted width="100%" frameborder="0"></iframe>
+  </div>
+</div>
+<!-- Chemistry Paper End -->
+<!-- Chemistry 2nd Paper -->
+<div id="myModal2" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe src="https://cutt.ly/YfaliOP" width="100%" frameborder="0"></iframe>
+    </div>
+  </div>
+<!-- Chemistry 2nd Paper End -->
+<!-- Digital Shuchipotro -->
+<div id="myModal2" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <picture>
+      <source media="(min-width: 900px)" srcset="../img/btn/shuchipotro-large.png">
+        <source media="(min-width: 465px)" srcset="../img/btn/shuchipotro.png">
+      <img src="../img/btn/shuchipotro.png" height="450" width="100%" alt="Digital Interactive Suchipotro">
+      </picture>
+      <a href="https://cutt.ly/octdrl" class="btn btn-success btn-block"><span>Download Now</span></a>
+    </div>
+  </div>
+<!-- Digital Shuchipotro End -->
+<!-- Adevertisements End -->
     <footer class="new_footer_area bg_color">
         <div class="new_footer_top">
             <div class="footer_bg">
@@ -201,6 +247,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/modal.js"></script>
     <script src="../js/firebase.js"></script>
     <script src="../js/subject.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

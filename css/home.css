@@ -70,12 +70,13 @@ body {
     padding: 20px;
 }
 .details a {
-    position: fixed;
+    position: relative;
+    display: inline-block;
     background-image: linear-gradient(to right, #039BE5, #01579b);
     color: white;
     text-decoration: none;
     margin-left: 80px;
-    margin-top: 150px;
+    margin-top: 70px;
     padding: 15px;
     border-radius: 40px;
 }

@@ -1,0 +1,15 @@
+@media screen and (max-height: 640px) {
+    iframe {
+        height: 490px;
+    }
+}
+@media screen and (min-width: 375px) {
+    iframe {
+        height: 650px;
+    }
+}
+@media screen and (min-width: 700px) {
+    iframe {
+        height: 600px;
+    }
+}
