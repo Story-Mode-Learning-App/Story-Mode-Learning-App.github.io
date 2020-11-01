@@ -1,11 +1,16 @@
-@media screen and (max-height: 640px) {
+@media screen and (max-width: 355px) {
     iframe {
-        height: 490px;
+        height: 500px;
     }
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 356px) {
     iframe {
-        height: 650px;
+        height: 600px;
+    }
+}
+@media screen and (max-width: 600px) {
+    iframe {
+        height: 580px;
     }
 }
 @media screen and (min-width: 700px) {
