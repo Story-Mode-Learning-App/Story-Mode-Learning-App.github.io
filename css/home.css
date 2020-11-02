@@ -15,7 +15,7 @@ body {
 }
 .container {
     max-width: 1000px;
-    margin: 10px auto;
+    margin: 12px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
