@@ -10,7 +10,6 @@
     <link rel="apple-touch-icon" href="img/logo/Tariq_logo_main.png">
     <link rel="stylesheet" href="css/subject-choice.css">
     <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/iframe.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
@@ -44,22 +43,24 @@
         <br><br>
         <div class="shuchipotro-button">
             <h4 style="text-align: center;">Download Now (It's Free)</h4>
-            <a type="button" class="myBtn"><span>Digital Interactive Suchipotro</span></a>
+            <a type="button" data-toggle="modal" data-target="#myModal"><span>Digital Interactive Suchipotro</span></a>
         </div>
     </div>
     </div>
       <!-- Adevertisements -->
     <!-- Digital Shuchipotro -->
-<div id="myModal" class="modal">
+<div class="modal fade" id="myModal">
+<div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <span class="close">&times;</span>
-      <picture>
-      <source media="(min-width: 900px)" srcset="img/btn/shuchipotro-large.png">
-        <source media="(min-width: 465px)" srcset="img/btn/shuchipotro.jpg">
-      <img src="img/btn/shuchipotro.jpg" height="450" width="100%" alt="Digital Interactive Suchipotro">
-      </picture>
-      <a href="https://cutt.ly/octdrl" class="btn btn-success btn-block"><span>Download Now</span></a>
+      <div class="modal-header">
+      <button class="close" type="button" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+      <img class="centered" src="img/btn/shuchipotro.jpg" height="400px" width="100%" alt="Digital Interactive Suchipotro">
+      <a href="https://cutt.ly/octdrl" class="btn btn-success btn-block" data-toggle="tooltip" title="IT's FREE! 😍">Download Now  <span class="spinner-grow spinner-grow-sm"></span></a>
     </div>
+    </div>
+  </div>
   </div>
 <!-- Digital Shuchipotro End -->
 <!-- Adevertisements End -->
@@ -87,6 +88,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script src="js/firebase.js"></script>
 <script src="js/home.js"></script>
-<script src="js/modal-home.js"></script>
 </body>
 </html>

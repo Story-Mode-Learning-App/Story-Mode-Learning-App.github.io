@@ -14,3 +14,6 @@ firebase.auth().onAuthStateChanged(function(user) {
     }
     mainApp.logOut = logOut;
 })()
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
