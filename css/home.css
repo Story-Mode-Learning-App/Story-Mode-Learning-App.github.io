@@ -76,7 +76,7 @@ body {
     color: white;
     text-decoration: none;
     margin-left: 80px;
-    margin-top: 70px;
+    /* margin-top: 70px; */
     padding: 15px;
     border-radius: 40px;
 }
@@ -84,4 +84,15 @@ body {
     background-image: linear-gradient(to left, #039BE5, #01579b);
     color: black;
     border: 1px solid black;
+}
+.details h3,
+.details h4 {
+    color: #01579b;
+    text-align: center;
+}
+.details p {
+    color: #000;
+}
+.details strong {
+    color: #01579b;
 }
