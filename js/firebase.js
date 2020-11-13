@@ -11,6 +11,7 @@ var app_firebase = {};
     measurementId: "G-GMT12B0L63"
   };
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
   app_firebase = firebase;
+  firebase.analytics();
+  var perf = firebase.performance();
 })()
