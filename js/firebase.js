@@ -8,7 +8,7 @@ var app_firebase = {};
     storageBucket: "story-mode-learning.appspot.com",
     messagingSenderId: "259152173161",
     appId: "1:259152173161:web:65b3c9b2a212f589b92af8",
-    measurementId: "G-GMT12B0L63"
+    measurementId: "G-2PGS95QWE3"
   };
   firebase.initializeApp(firebaseConfig);
   app_firebase = firebase;
