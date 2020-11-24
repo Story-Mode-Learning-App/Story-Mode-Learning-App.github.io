@@ -50,6 +50,7 @@
               <li class="nav-item">
                 <a id="dark-toggle" class="btn btn-outline-light" onclick="darkmode.toggle();">🌓 Theme</a>
                 <div class="dark-toggle-switch"></div>  
+                <button class="btn btn-info" data-toggle="modal" data-target="#share" role="button">🔗 Share</button> 
               </li>
               </ul>
           </div>  
@@ -58,7 +59,6 @@
     <div class="container">
         <br><br><br>
         <h1>Privacy Policy for Story Mode Learning App</h1>
-
 <p>At Story Mode Learning App, accessible from <a href="https://storymodelearning.com/">https://storymodelearning.com/</a>, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Story Mode Learning App and how we use it.</p>
 
 <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
@@ -122,10 +122,28 @@
 <div class="cursor"></div>
 <div class="cursor2"></div>
 </div>
+<!-- Share Modal -->
+<div class="modal fade" id="share">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Share With Your Friends 🥰</h5>
+            </div>
+            <div class="modal-body">
+                  <div class="my-plugin-share" button-type="round" share-url="https://storymodelearning.com/privacy"></div>
+            </div>
+            <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-info" data-dismiss="modal">May be later</button>
+            </div>                                
+      </div>
+  </div>
+</div>
+<!-- Share Modal End-->
 <script src="js/loader-fast.js"></script>
 <script src="js/dark.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/cursor.js"></script>
+<script src="js/share.js"></script>
 </body>
 </html>

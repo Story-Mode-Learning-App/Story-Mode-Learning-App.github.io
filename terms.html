@@ -49,7 +49,8 @@
               </li>
               <li>
                 <a id="dark-toggle" class="btn btn-outline-light" onclick="darkmode.toggle();">🌓 Theme</a>
-                <div class="dark-toggle-switch"></div>  
+                <div class="dark-toggle-switch"></div>
+                <button class="btn btn-info" data-toggle="modal" data-target="#share" role="button">🔗 Share</button>   
               </li>
               </ul>
           </div>
@@ -59,7 +60,7 @@
         <br><br><br>
         
         <h2><strong>Terms and Conditions</strong></h2>
-        <div class="my-plugin-share" button-type="round" share-url="https://storymodelearning.com/terms.html"></div>
+
         <p>Welcome to <a href="https://storymodelearning.com/">Story Mode Learning App</a>!</p>
         
         <p>These terms and conditions outline the rules and regulations for the use of <a href="https://storymodelearning.com/">Story Mode Learning App</a>'s Website, located at <a href="https://storymodelearning.com/">https://storymodelearning.com/</a>.</p>
@@ -204,6 +205,23 @@
 <div class="cursor"></div>
 <div class="cursor2"></div>
 </div>
+<!-- Share Modal -->
+<div class="modal fade" id="share">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Share With Your Friends 🥰</h5>
+              </div>
+              <div class="modal-body">
+                    <div class="my-plugin-share" button-type="round" share-url="https://storymodelearning.com/terms"></div>
+              </div>
+              <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-info" data-dismiss="modal">May be later</button>
+              </div>                                
+        </div>
+    </div>
+  </div>
+  <!-- Share Modal End-->
 <script src="js/loader-fast.js"></script>
 <script src="js/dark.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
