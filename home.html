@@ -44,6 +44,19 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/dark.css">
     <link rel="stylesheet" href="css/loader.css">
+
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "948cad21-8070-46ef-a31c-09cc866487dd",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
 </head>
   <body onload="loader()">
   <div id="loader"></div>
