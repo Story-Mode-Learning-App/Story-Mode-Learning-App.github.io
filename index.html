@@ -56,7 +56,12 @@
     <!-- Firebase UI JS and CSS -->
     <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css">
-
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <style>
+        button {
+            display: none;
+        }
+    </style>
     </head>
 <body>
     <section id="page-splash">
@@ -74,8 +79,17 @@
         <div class="declearation">
         <h5>By proceeding you're agreeing to our <a href="terms.html">Terms</a> &amp; <a href="privacy.html">Privacy</a> Policies.</h5>
         </div>
+        <button class="g-recaptcha" 
+        data-sitekey="6Ld1Oe8ZAAAAACGfKHk4-dL32JsuzjVGA8a8B5bc" 
+        data-callback='onSubmit' 
+        data-action='submit'></button>
       </section>
 <script src="js/firebase.js"></script>
 <script src="js/auth.js"></script>
+<script>
+    function onSubmit(token) {
+      document.getElementById("page-splash").submit();
+    }
+  </script>
 </body>
 </html>
