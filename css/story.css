@@ -12,6 +12,7 @@ body {
         height: 100vh;
         display: block;
         margin: auto;
+        cursor: pointer;
     }
     .carousel-caption{
         display: flex; 
