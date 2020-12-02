@@ -13,3 +13,6 @@ var app_firebase = {};
   firebase.initializeApp(firebaseConfig);
   app_firebase = firebase;
 })()
+document.addEventListener("contextmenu", function(e) {
+  e.preventDefault();
+});
