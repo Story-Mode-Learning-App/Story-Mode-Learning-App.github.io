@@ -156,6 +156,23 @@
   </div>
 </div>
 <!-- Share Modal End-->
+<!-- Modal -->
+<div class="modal fade" id="ifti" tabindex="-1" role="dialog" aria-labelledby="iftiLabel">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+		  <div class="modal-header">
+      <h5 class="modal-title" id="iftiTitle">You will be forever remembered 💛</h5>
+      <button class="close" type="button" data-dismiss="modal">&times;</button>
+		  </div>
+		  <div class="modal-body">
+			<img src="img/fb/Ifti.jpg" class="rounded mx-auto d-block">
+		  </div>
+		  <div class="modal-footer">
+			<a type="button" href="https://www.facebook.com/groups/aparsclassroom/permalink/1315815075453225/" target="_blank" class="btn btn-outline-primary">Learn more</a>
+    </div>
+		</div>
+	  </div>
+  </div>
 <script src="js/loader-fast.js"></script>
 <script src="js/dark.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -165,5 +182,11 @@
 <script src="js/home.js"></script>
 <script src="js/share.js"></script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fc0e109208d3788"></script>
+<script>
+  setTimeout(function() {
+      $('#ifti').modal();
+  }, 3000);
+  setTimeout(function() { $('#ifti').modal('hide'); }, 8000);
+</script>
 </body>
 </html>
