@@ -183,10 +183,21 @@
 <script src="js/share.js"></script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fc0e109208d3788"></script>
 <script>
-  setTimeout(function() {
-      $('#ifti').modal();
-  }, 3000);
-  setTimeout(function() { $('#ifti').modal('hide'); }, 9000);
+  // setTimeout(function() {
+  //     $('#ifti').modal();
+  // }, 3000);
+  // setTimeout(function() { $('#ifti').modal('hide'); }, 9000);
+  var user = firebase.auth().currentUser;
+
+if (user != null) {
+  user.providerData.forEach(function (profile) {
+    console.log("Sign-in provider: " + profile.providerId);
+    console.log("  Provider-specific UID: " + profile.uid);
+    console.log("  Name: " + profile.displayName);
+    console.log("  Email: " + profile.email);
+    console.log("  Photo URL: " + profile.photoURL);
+  });
+}
 </script>
 </body>
 </html>
