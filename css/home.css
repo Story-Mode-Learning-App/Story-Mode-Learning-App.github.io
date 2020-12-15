@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Kalpurush;
+    src: url('../assets/kalpurush.ttf'); 
+  }
 body {
     margin: 0;
     padding: 0;
@@ -76,23 +80,26 @@ body {
     color: white;
     text-decoration: none;
     margin-left: 80px;
-    /* margin-top: 70px; */
     padding: 15px;
     border-radius: 40px;
 }
 .details a:hover {
     background-image: linear-gradient(to left, #039BE5, #01579b);
-    color: black;
-    border: 1px solid black;
+    color: #fff;
+    border: 1px solid #fff;
 }
 .details h3,
 .details h4 {
     color: #01579b;
     text-align: center;
+    font-family: Kalpurush;
 }
 .details p {
     color: #000;
+    font-family: Kalpurush; font-size: 16px;
 }
 .details strong {
     color: #01579b;
+    font-family: Kalpurush;
+    font-size: 18px;
 }
