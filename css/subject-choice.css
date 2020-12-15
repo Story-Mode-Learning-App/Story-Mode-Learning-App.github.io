@@ -2,6 +2,10 @@
 * {
 	font-family:  'Montserrat', sans-serif;
 }
+@font-face {
+    font-family: Kalpurush;
+    src: url('../assets/kalpurush.ttf'); 
+  }
 body {
     margin: 0;
     padding: 0;
