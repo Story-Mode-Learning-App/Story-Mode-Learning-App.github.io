@@ -12,6 +12,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     photoUrl = user.photoURL;
         document.getElementById("dp").innerHTML = '<img src="' + photoUrl +'" class="rounded mx-auto d-block" alt="dp">';
         document.getElementById("userName").innerHTML = "Name : " + uname;
+        document.getElementById("userName2").innerHTML = "Phone : N/A";
         document.getElementById("uemail").innerHTML = "Email : " + email;
         document.getElementById("licenseFor").innerHTML = "License : " + uid;
         if(emailVerified == true) {
