@@ -24,10 +24,10 @@ firebase.auth().onAuthStateChanged(function(user) {
 if (user != null) {
   user.providerData.forEach(function (profile) {
     document.getElementById("secured").innerHTML = "Verified by : " + profile.providerId;
-    if(emailVerified != true) {
-    document.getElementById("userName").innerHTML = "Name : " + profile.uid;
-    document.getElementById("uemail").innerHTML = "Email : Not Required";
-    }
+    // if(emailVerified != true) {
+    // document.getElementById("userName").innerHTML = "Name : " + profile.uid;
+    // document.getElementById("uemail").innerHTML = "Email : Not Required";
+    // }
   });
 }
   }else {
