@@ -12,9 +12,8 @@ firebase.auth().onAuthStateChanged(function(user) {
     emailVerified = user.emailVerified;
     photoUrl = user.photoURL;
         document.getElementById("dp").innerHTML = '<img src="' + photoUrl +'" class="dp" alt="dp">';
-        document.getElementById("userName").innerHTML = uname;
+        document.getElementById("userName").innerHTML = "Name : " + uname;
         document.getElementById("uemail").innerHTML = "Email : " + email;
-        document.getElementById("secured").innerHTML = "Licensed for : " + secured;
         document.getElementById("licenseFor").innerHTML = "License : " + uid;
         if(emailVerified == true) {
           document.getElementById("Subscription").innerHTML = "Subscription : Free Trial";
@@ -25,6 +24,10 @@ firebase.auth().onAuthStateChanged(function(user) {
 if (user != null) {
   user.providerData.forEach(function (profile) {
     document.getElementById("secured").innerHTML = "Verified by : " + profile.providerId;
+    if(emailVerified != true) {
+    document.getElementById("userName").innerHTML = "Name : " + profile.uid;
+    document.getElementById("uemail").innerHTML = "Email : Not Required";
+    }
   });
 }
   }else {
