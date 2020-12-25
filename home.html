@@ -63,6 +63,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="privacy.html">Privacy Policy</a>
               </li>
+              <li>
+                <button class="btn btn-info" data-toggle="modal" data-target="#Profile" role="button"><img src="https://aparsclassroom.com/App/Assets/img/person-circle.svg" alt="dp" height="30px" width="30px"> Profile</button>
+              </li>
           </ul>
             <a id="dark-toggle" class="btn btn-outline-light" onclick="darkmode.toggle();">🌓 Theme</a>
             <div class="dark-toggle-switch"></div>
@@ -157,7 +160,7 @@
 </div>
 <!-- Share Modal End-->
 <!-- Ad Modal -->
-<div class="modal fade" id="customAd" tabindex="-1" role="dialog" aria-labelledby="custom-adLabel">
+<div class="modal fade" id="Profile" tabindex="-1" role="dialog" aria-labelledby="custom-adLabel">
 	<div class="modal-dialog modal-dialog-centered">
 		<div class="modal-content">
 		  <div class="modal-header">
@@ -188,10 +191,10 @@
 <script src="js/share.js"></script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fc0e109208d3788"></script>
 <script>
-  setTimeout(function() {
-      $('#customAd').modal();
-  }, 2000);
-  setTimeout(function() { $('#customAd').modal('hide'); }, 6000);
+  // setTimeout(function() {
+  //     $('#Profile').modal();
+  // }, 2000);
+  // setTimeout(function() { $('#Profile').modal('hide'); }, 6000);
 </script>
 </body>
 </html>
