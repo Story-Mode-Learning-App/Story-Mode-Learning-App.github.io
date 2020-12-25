@@ -21,7 +21,7 @@ firebase.auth().onAuthStateChanged(function(user) {
           document.getElementById("Subscription").innerHTML = "Subscription : Free Trial";
         }
         if(uname == null) {
-          document.getElementById("userName").innerHTML = "Name : N/A";
+          document.getElementById("userName").innerHTML = "";
           document.getElementById("uemail").innerHTML = "Email : N/A";
           document.getElementById("dp").innerHTML = "";
         }
@@ -29,6 +29,10 @@ if (user != null) {
   user.providerData.forEach(function (profile) {
     document.getElementById("secured").innerHTML = "Verified by : " + profile.providerId;
   });
+}
+if (uname == null) {
+  user.providerData.forEach(function (profile) {
+    document.getElementById("userName2").innerHTML = "Name : " + profile.uid);
 }
   }else {
       window.location.replace("index.html");
