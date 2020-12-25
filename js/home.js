@@ -5,9 +5,11 @@ var uid = null;
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     uid = user.uid;
+    uname = user.name;
         email = user.email;
         secured = user.providerId;
         emailVerified = user.emailVerified;
+        document.getElementById("userName").innerHTML = uname;
         document.getElementById("uemail").innerHTML = "Email : " + email;
         document.getElementById("secured").innerHTML = "Licensed for : " + secured;
         document.getElementById("licenseFor").innerHTML = "License : " + uid;
@@ -19,7 +21,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         }
 if (user != null) {
   user.providerData.forEach(function (profile) {
-    document.getElementById("secured").innerHTML = "Encripted by : User " + profile.providerId;
+    document.getElementById("secured").innerHTML = "Verified by : " + profile.providerId;
   });
 }
   }else {
