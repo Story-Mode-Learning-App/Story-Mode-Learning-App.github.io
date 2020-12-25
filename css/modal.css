@@ -66,3 +66,8 @@
   text-decoration: none;
   cursor: pointer;
 }
+.dp {
+  border-radius: 50%;
+  height: 60px;
+  width: 100%;
+}
