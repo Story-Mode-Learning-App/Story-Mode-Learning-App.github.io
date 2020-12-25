@@ -6,9 +6,11 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     uid = user.uid;
     uname = user.displayName;
-        email = user.email;
-        secured = user.providerId;
-        emailVerified = user.emailVerified;
+    email = user.email;
+    secured = user.providerId;
+    emailVerified = user.emailVerified;
+    photoUrl = user.photoURL;
+        document.getElementById("dp").innerHTML = '<img src="' + photoUrl +'" class="dp" alt="dp">';
         document.getElementById("userName").innerHTML = uname;
         document.getElementById("uemail").innerHTML = "Email : " + email;
         document.getElementById("secured").innerHTML = "Licensed for : " + secured;
@@ -26,7 +28,6 @@ if (user != null) {
 }
   }else {
       window.location.replace("index.html");
-      console.log("ok")
   }
 });
     function logOut(){
