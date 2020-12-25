@@ -12,10 +12,10 @@ firebase.auth().onAuthStateChanged(function(user) {
         document.getElementById("secured").innerHTML = "Licensed for : " + secured;
         document.getElementById("licenseFor").innerHTML = "License : " + uid;
         if(emailVerified == true) {
-          document.getElementById("Subscription").innerHTML = "Subscription : Premium";
+          document.getElementById("Subscription").innerHTML = "Subscription : Free Trial";
         }
         if(emailVerified != true) {
-          document.getElementById("Subscription").innerHTML = "Subscription : Not Valid";
+          document.getElementById("Subscription").innerHTML = "Subscription : Free Trial";
         }
 if (user != null) {
   user.providerData.forEach(function (profile) {
