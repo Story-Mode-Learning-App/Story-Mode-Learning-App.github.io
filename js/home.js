@@ -26,7 +26,12 @@ firebase.auth().onAuthStateChanged(function(user) {
           document.getElementById("uemail").innerHTML = "Email : N/A";
           document.getElementById("dp").innerHTML = "";
         }
-if (user != null || uname == null) {
+if (user != null) {
+  user.providerData.forEach(function (profile) {
+    document.getElementById("secured").innerHTML = "Verified by : " + profile.providerId;
+  });
+}
+if (user != null && uname == null) {
   user.providerData.forEach(function (profile) {
     document.getElementById("secured").innerHTML = "Verified by : " + profile.providerId;
     document.getElementById("userName2").innerHTML = "Phone : " + profile.uid;
