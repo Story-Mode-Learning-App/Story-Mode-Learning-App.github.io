@@ -5,7 +5,7 @@ var uid = null;
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     uid = user.uid;
-    uname = user.name;
+    uname = user.displayName;
         email = user.email;
         secured = user.providerId;
         emailVerified = user.emailVerified;
