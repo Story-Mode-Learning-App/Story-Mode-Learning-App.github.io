@@ -2,7 +2,7 @@ var mainApp = {};
 (function() {
     var firebase = app_firebase;
 var uid = null;
-$.get('https://json.geoiplookup.io/', function(res) {var a = ("Reg. IP : " + res.ip + "<br>" + "District : " + res.district + "<br>" + "Country : " + res.country_name);document.getElementById("ip-details").innerHTML = a;});
+$.get('https://json.geoiplookup.io/', function(res) {var c = ("Reg. IP : " + res.ip + "<br>" + "District : " + res.district + "<br>" + "Country : " + res.country_name);document.getElementById("ip-details").innerHTML = c;});
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     uid = user.uid;
