@@ -2,7 +2,7 @@ var mainApp = {};
 (function() {
     var firebase = app_firebase;
 var uid = null;
-$.get('https://json.geoiplookup.io/', function(res) {var c = ("Reg. IP : " + res.ip + "<br>" + "District : " + res.district + "<br>" + "Country : " + res.country_name);document.getElementById("ip-details").innerHTML = c;});
+// $.get('https://json.geoiplookup.io/', function(res) {var c = ("Reg. IP : " + res.ip + "<br>" + "District : " + res.district + "<br>" + "Country : " + res.country_name);document.getElementById("ip-details").innerHTML = c;});
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     uid = user.uid;
@@ -24,10 +24,6 @@ firebase.auth().onAuthStateChanged(function(user) {
 if (user != null) {
   user.providerData.forEach(function (profile) {
     document.getElementById("secured").innerHTML = "Verified by : " + profile.providerId;
-    // if(emailVerified != true) {
-    // document.getElementById("userName").innerHTML = "Name : " + profile.uid;
-    // document.getElementById("uemail").innerHTML = "Email : Not Required";
-    // }
   });
 }
   }else {
