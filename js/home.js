@@ -20,6 +20,10 @@ firebase.auth().onAuthStateChanged(function(user) {
         if(emailVerified != true) {
           document.getElementById("Subscription").innerHTML = "Subscription : Free Trial";
         }
+        if(uname == null) {
+          document.getElementById("userName").innerHTML = "Name : N/A";
+          document.getElementById("uemail").innerHTML = "Email : N/A";
+        }
 if (user != null) {
   user.providerData.forEach(function (profile) {
     document.getElementById("secured").innerHTML = "Verified by : " + profile.providerId;
