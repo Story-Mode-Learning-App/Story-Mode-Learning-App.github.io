@@ -23,6 +23,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         if(uname == null) {
           document.getElementById("userName").innerHTML = "Name : N/A";
           document.getElementById("uemail").innerHTML = "Email : N/A";
+          document.getElementById("dp").innerHTML = "";
         }
 if (user != null) {
   user.providerData.forEach(function (profile) {
