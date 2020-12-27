@@ -18,6 +18,9 @@ firebase.auth().onAuthStateChanged(function(user) {
         if(emailVerified == true) {
           document.getElementById("Subscription").innerHTML = "Subscription : Free Trial";
         }
+        if(email == null) {
+          document.getElementById("uemail").innerHTML = "Email : N/A";
+        }
         if(emailVerified != true) {
           document.getElementById("Subscription").innerHTML = "Subscription : Free Trial";
         }
