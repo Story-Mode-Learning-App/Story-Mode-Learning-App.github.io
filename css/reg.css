@@ -1,0 +1,36 @@
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  }
+  .contact100-form-btn:hover {
+    background-image: linear-gradient(to left, #039BE5, #01579b);
+  }
+  #ip-details {
+display: none;
+}
+  #confirmation{
+text-align: center;
+margin-top:10px;
+display: none;
+}
+#newAlert{
+text-align: center;
+}
+#form .indicator {
+position: absolute;
+top: 20px;
+right: 10px;
+height: 15px;
+width: 15px;
+border-radius: 50%;
+background: transparent;
+}
+#form.valid .indicator {
+background: green;
+}
+#form.invalid .indicator {
+background: red;
+}
