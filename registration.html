@@ -54,6 +54,30 @@
 <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body onload="myFunction()">
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v9.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="102413701673528"
+  logged_in_greeting="Assalamu Alaikum🥰  How can we help you?"
+  logged_out_greeting="Assalamu Alaikum🥰  How can we help you?">
+      </div>
 <div class="container-contact100">
 <div class="wrap-contact100">
 <form method="post" autocomplete="off" id="form" name="RegistrationForm" class="contact100-form validate-form">
