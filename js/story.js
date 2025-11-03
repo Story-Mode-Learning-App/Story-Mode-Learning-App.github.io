@@ -8,7 +8,7 @@ var mainApp = {};
       var nextbutton = document.getElementsByClassName("carousel-control-next")[0]
       nextbutton.addEventListener('click', fullscreen);
       var prevbutton = document.getElementsByClassName("carousel-control-prev")[0]
-      prevbutton.addEventListener('click', fullscreen);
+      prevbutton.addEventListener('click', exitfullscreen);
     } else {
       window.location.replace("../../../../");
     }
@@ -34,6 +34,12 @@ function fullscreen() {
     }
   }
 }
+
+function exitfullscreen() {
+  if (document.fullscreenElement) {
+      document.exitFullscreen()
+    }
+  }
 
     $('#carouselFade').on('slid.bs.carousel', function () {
     const $carousel = $(this);
