@@ -7,6 +7,8 @@ var mainApp = {};
       uid = user.uid;
       var nextbutton = document.getElementsByClassName("carousel-control-next")[0]
       nextbutton.addEventListener('click', fullscreen);
+      var prevbutton = document.getElementsByClassName("carousel-control-prev")[0]
+      prevbutton.addEventListener('click', fullscreen);
     } else {
       window.location.replace("../../../../");
     }
