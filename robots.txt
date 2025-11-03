@@ -35,4 +35,4 @@ Disallow:
 Disallow: /js/
 Disallow: /css/
 Disallow: /img/
-Sitemap: https://storymodelearning.com/sitemap.xml
+Sitemap: https://storymode.asgshop.it.com/sitemap.xml
