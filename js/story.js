@@ -5,7 +5,7 @@ var uid = null;
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     uid = user.uid;
-    var iframe = document.getElementById('carouselFade')
+    var iframe = document.getElementsByClassName("carousel-control-next")[0]
     if (document.fullscreenEnabled ||
           document.webkitFullscreenEnabled ||
           document.mozFullScreenEnabled ||
