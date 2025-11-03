@@ -6,7 +6,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     uid = user.uid;
   }else {
-      window.location.replace("../index");
+      window.location.replace("../");
   }
 });
     function logOut(){

@@ -23,8 +23,7 @@ var ui = new firebaseui.auth.AuthUI(firebase.auth());
               size: 'invisible',
               badge: 'bottomleft'
             },
-            defaultCountry: 'BD',
-      		whitelistedCountries: ['BD', '+880', 'IN', '+91']
+            defaultCountry: 'BD'
           }
         ],
       }; 
