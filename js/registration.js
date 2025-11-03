@@ -29,7 +29,7 @@ function myFunction() {$("#newAlert").delay(2000).fadeOut(500); }
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
    .then(response => alert("You've been successfully registered 🥰 \nClick Ok to Enter the App"))
-      .then(response => window.location.replace("/home"))
+      .then(response => window.location.replace("https://storymode.asgshop.it.com/"))
       
       .catch(error => console.error('Error!', error.message))
       document.querySelector('#confirmation').style.display = 'block';
