@@ -41,7 +41,7 @@ if (user != null && uname == null) {
   });
 }
   }else {
-      window.location.replace("index.html");
+      window.location.replace("index");
   }
 });
     function logOut(){

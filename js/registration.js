@@ -29,7 +29,7 @@ function myFunction() {$("#newAlert").delay(2000).fadeOut(500); }
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
    .then(response => alert("You've been successfully registered 🥰 \nClick Ok to Enter the App"))
-      .then(response => window.location.replace("index.html"))
+      .then(response => window.location.replace("index"))
       
       .catch(error => console.error('Error!', error.message))
       document.querySelector('#confirmation').style.display = 'block';
@@ -43,7 +43,7 @@ var uid = null;
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     uid = user.uid;
-    window.location.replace("home.html");
+    window.location.replace("home");
   }
 });
 })()

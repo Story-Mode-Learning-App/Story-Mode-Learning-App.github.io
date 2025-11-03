@@ -11,7 +11,7 @@ var ui = new firebaseui.auth.AuthUI(firebase.auth());
           }
         },
         signInFlow: 'popup',
-        signInSuccessUrl: 'home.html',
+        signInSuccessUrl: 'home',
         signInOptions: [
 
           firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -38,7 +38,7 @@ var uid = null;
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     uid = user.uid;
-    window.location.replace("home.html");
+    window.location.replace("home");
   }
 });
 })()
